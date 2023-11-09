@@ -10,6 +10,7 @@
 #  --  Rosetta and XCODE Tools  --  #
 sudo softwareupdate --install-rosetta
 xcode-select --install
+echo "Press <Install> on the prompt. It's probably hidden if you are running terminal in fullcreen..."
 
 
 #  --  Homebrew for Apple Silicon  --  #
