@@ -122,6 +122,9 @@ brew install --cask suspicious-package #      https://formulae.brew.sh/cask/susp
 # VS Code                                     Open-source code editor
 brew install --cask visual-studio-code #      https://formulae.brew.sh/cask/visual-studio-code
 
+# wget                                        Internet file retriever
+brew install wget #                           https://formulae.brew.sh/formula/wget
+
 # VLC                                         Multimedia player
 brew install --cask vlc #                     https://formulae.brew.sh/cask/vlc
 
@@ -151,11 +154,14 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Download PowerLevel10K Theme                https://github.com/romkatv/powerlevel10k
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
-# Backup .dot-files just in case
-mv 
+# Backup dot-files just in case
+mkdir .bak
+mv .zprofile .bak/.zprofile.bak
+mv .zshrc .bak/.zshrc.bak
 
 # Copy new .dot-files
 .config/
+source ~/.zshrc
 
 # Webroot
 code
