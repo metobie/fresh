@@ -1,5 +1,5 @@
-# fresh-start
-Such a lovely thing when macOS has been reinstalled.
+# fresh out of nothing.
+Such a lovely thing to run when macOS just has been reinstalled.
 
 ```shell
 curl https://raw.githubusercontent.com/metobie/fresh-start/master/fresh-install.sh | bash
