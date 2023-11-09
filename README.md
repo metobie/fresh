@@ -1,5 +1,5 @@
 # Fresh out of nothing.
-Such a lovely thing to run when macOS just has been reinstalled.
+Such a lovely thing to run when macOS just has been reinstalled.<br>
 Copy, open your favourite terminal and hit enter. Kick back and relax and wait it out.
 
 ```shell
