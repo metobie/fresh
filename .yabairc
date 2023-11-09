@@ -22,14 +22,14 @@ yabai -m config                                 \
     normal_window_opacity        0.90           \
     window_opacity               off            \
     insert_feedback_color        0xffd75f5f     \
-    split_ratio                  0.65           \
+    split_ratio                  0.50           \
     split_type                   auto           \
     auto_balance                 off            \
-    top_padding                  10             \
-    bottom_padding               10             \
-    left_padding                 10             \
-    right_padding                10             \
-    window_gap                   10             \
+    top_padding                  08             \
+    bottom_padding               08             \
+    left_padding                 08             \
+    right_padding                08             \
+    window_gap                   08             \
     layout                       bsp            \
     mouse_modifier               alt            \
     mouse_action1                move           \
@@ -48,7 +48,7 @@ yabai -m rule --add app="^(Citrix Workspace|Citrix Viewer|Parallels Desktop)$" m
 
 #  --  Workspaces  --  #
 # Workspace 1 | Start
-yabai -m rule --add app="^(App1|App2)$" space=1
+yabai -m rule --add app="^Safari$" space=1
 # Workspace 2 | Code
 yabai -m rule --add app="^(Code|Notion|iTerm2)$" space=2
 # Workspace 3 | Work
