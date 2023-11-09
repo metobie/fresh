@@ -92,6 +92,9 @@ brew install --cask microsoft-teams #         https://formulae.brew.sh/cask/micr
 # Microsoft Remote Desktop                    Remote desktop client
 brew install mmicrosoft-remote-desktop #      https://formulae.brew.sh/cask/microsoft-remote-desktop
 
+# Neofetch                                    Fast, highly customisable system info script
+brew install neofetch #                       https://formulae.brew.sh/formula/neofetch
+
 # Notion                                      App to write, plan, collaborate, and get organized
 brew install --cask notion #                  https://formulae.brew.sh/cask/notion
 
@@ -119,6 +122,9 @@ brew install --cask spotify #                 https://formulae.brew.sh/cask/spot
 # Suspicious Package                          Application for inspecting installer packages
 brew install --cask suspicious-package #      https://formulae.brew.sh/cask/suspicious-package
 
+# Tree                                        Display directories as trees (with optional color/HTML output)
+brew install tree #                           https://formulae.brew.sh/formula/tree
+
 # VS Code                                     Open-source code editor
 brew install --cask visual-studio-code #      https://formulae.brew.sh/cask/visual-studio-code
 
@@ -141,10 +147,15 @@ brew install koekeishiya/formulae/yabai #     https://github.com/koekeishiya/yab
 brew install koekeishiya/formulae/skhd #      https://github.com/koekeishiya/skhd
 
 # Bashtop
-# Neofetch
+brew install python3
+python3 -m pip install psutil
+brew install bash coreutils gnu-sed git
+brew install osx-cpu-temp
+git clone https://github.com/aristocratos/bashtop.git
+cd bashtop
+sudo make install
 
-
-#  --  Application tweaks and pimpin'  --  #
+#  --  Oh-my-zsh  --  #
 # Open home folder
 cd ~/ 
 
@@ -154,14 +165,21 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/too
 # Download PowerLevel10K Theme                https://github.com/romkatv/powerlevel10k
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
+# Set the theme in ~/.zshrc
+sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k/powerlevel10k"/g' ~/.zshrc
+source ~/.zshrc
+
+# add
+echo 'Hello' >> /Users/username/Desktop/user.txt
+
 # Backup dot-files just in case
-mkdir .bak
-mv .zprofile .bak/.zprofile.bak
-mv .zshrc .bak/.zshrc.bak
+#mkdir .bak
+#mv .zprofile .bak/.zprofile.bak
+#mv .zshrc .bak/.zshrc.bak
 
 # Copy new .dot-files
-.config/
-source ~/.zshrc
+#.config/
+#
 
 # Webroot
 code
@@ -170,27 +188,11 @@ code
 # -- Application configurations -- #
 
 # iTerm2
-!Copy profiles
-!Install 
-
 # Flameshot
-code
-
 # Yabai
-!Copy config file
-
 # SKHD
-!Copy config file
-
-
-
-
-
-TO DO
-z configs
-zsh
-ohmyz
-iterm profile
-yasabi profile
-skhd profile
-!docker
+# ohmyz
+# iterm profile
+# yasabi profile
+# skhd profile
+# !docker
