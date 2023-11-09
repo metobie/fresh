@@ -167,10 +167,15 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 # Set the theme in ~/.zshrc
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k/powerlevel10k"/g' ~/.zshrc
-source ~/.zshrc
+#source ~/.zshrc
+
+git clone https://github.com/metobie/fresh.git .downloads
+cd .downloads/fresh
+cp yabairc ~/rabairc
+cp skhdrc ~/skhdrc
 
 # add
-echo 'Hello' >> /Users/username/Desktop/user.txt
+#echo 'Hello' >> /Users/username/Desktop/user.txt
 
 # Backup dot-files just in case
 #mkdir .bak
@@ -182,7 +187,7 @@ echo 'Hello' >> /Users/username/Desktop/user.txt
 #
 
 # Webroot
-code
+#code
 
 
 # -- Application configurations -- #
