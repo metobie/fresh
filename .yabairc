@@ -22,7 +22,7 @@ yabai -m config                                 \
     normal_window_opacity        0.90           \
     window_opacity               off            \
     insert_feedback_color        0xffd75f5f     \
-    split_ratio                  0.50           \
+    split_ratio                  0.06           \
     split_type                   auto           \
     auto_balance                 off            \
     top_padding                  07             \
@@ -48,11 +48,12 @@ yabai -m rule --add app="^(Citrix Workspace|Citrix Viewer|Parallels Desktop)$" m
 
 #  --  Workspaces  --  #
 # Workspace 1 | Start
-yabai -m rule --add app="^Safari$" space=1
+yabai -m rule --add app="^(Safari|Spotify)$" space=1
 # Workspace 2 | Code
-yabai -m rule --add app="^(Code|Notion|iTerm2)$" space=2
+yabai -m rule --add app="^(Code|Notion|iTerm2|GitHub Desktop)$" space=2
 # Workspace 3 | Work
-yabai -m rule --add app="^(Microsoft Teams (work or school)|Microsoft Edge|Microsoft Outlook|WorkSpacesClient.macOS)$" space=3
+yabai -m rule --add app="^(Microsoft Teams (work or school)|Microsoft Edge|Microsoft Outlook|WorkSpacesClient.macOS|Conrab Opto|Microsoft Word)$" space=3
+yabai -m rule --add title="^(Berg, Patrik 502)$" space=3
 # Workspace 4 | MacOS VM
 yabai -m rule --add app="^(macOS 12 VM$)" space=4
 # Workspace 5 | Kali Linux VM (Hackspace)
@@ -71,4 +72,4 @@ yabai -m rule --add app="^(Firefox)$" space=5
 # apps="^(IntelliJ IDEA|WebStorm|RubyMine|PyCharm|DataGrip)$"
 # yabai -m rule --add app="${apps}" space=3  manage=off
 
-echo "yabai configuration loaded"
+echo "yabai configuration loaded.."
