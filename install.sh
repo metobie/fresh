@@ -180,8 +180,13 @@ yabai --restart-service #Allow the prompts
 skhd --start-service # Allow the prompts
 skhd --restart-service # Allow the prompts
 source ~/.zshrc
-# add
+# add write changes to zshrc files
 #echo 'Hello' >> /Users/username/Desktop/user.txt
+
+#  --  Sketchybar  --  #
+# Install
+brew tap FelixKratz/formulae
+brew install sketchybar
 
 # Backup dot-files just in case
 #mkdir .bak
