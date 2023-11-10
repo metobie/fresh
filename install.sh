@@ -73,7 +73,7 @@ brew install --cask google-chrome #           https://formulae.brew.sh/cask/goog
 brew install gptline #                        https://formulae.brew.sh/formula/gptline
 
 # iterm2                                      Terminal emulator as alternative to Apple's Terminal app                             
-# brew install --cask iterm2 #                https://formulae.brew.sh/cask/iterm2
+brew install --cask iterm2 #                https://formulae.brew.sh/cask/iterm2
 
 # Mabel                                       Fancy BitTorrent client for the terminal
 brew install mabel #                          https://formulae.brew.sh/formula/mabel
@@ -103,7 +103,7 @@ brew install --cask notion #                  https://formulae.brew.sh/cask/noti
 brew install --cask notion-enhanced #         https://formulae.brew.sh/cask/notion-enhanced
 
 # NMAP                                        Port scanning utility for large networks
-brew install --cask nmap #                    https://formulae.brew.sh/formula/nmap
+brew install nmap #                           https://formulae.brew.sh/formula/nmap
 
 # Parallels Desktop                           Desktop virtualization software
 brew install --cask parallels #               https://formulae.brew.sh/cask/parallels
@@ -156,6 +156,8 @@ git clone https://github.com/aristocratos/bashtop.git
 cd bashtop
 sudo make install
 
+!CHANGE TERMINAL AND RUN THIS XXX
+
 #  --  Oh-my-zsh  --  #
 # Open home folder
 cd ~/ 
@@ -168,13 +170,16 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 
 # Set the theme in ~/.zshrc
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k/powerlevel10k"/g' ~/.zshrc
-#source ~/.zshrc
 
-git clone https://github.com/metobie/fresh.git .downloads
-cd .downloads/fresh
-cp yabairc ~/rabairc
-cp skhdrc ~/skhdrc
-
+mkdir ~/.downloads
+git clone https://github.com/metobie/fresh.git ~/.downloads
+cd ~/.downloads/
+cp .p10k.zsh .skhdrc .yabairc .zprofile .zshrc ~/
+yabai --start-service #Allow the prompts
+yabai --restart-service #Allow the prompts
+skhd --start-service # Allow the prompts
+skhd --restart-service # Allow the prompts
+source ~/.zshrc
 # add
 #echo 'Hello' >> /Users/username/Desktop/user.txt
 
@@ -202,3 +207,10 @@ cp skhdrc ~/skhdrc
 # yasabi profile
 # skhd profile
 # !docker
+
+
+Last login: Fri Nov 10 00:14:04 on ttys001
+[oh-my-zsh] plugin 'zsh-autosuggestions' not found
+[oh-my-zsh] plugin 'zsh-syntax-highlighting' not found
+[oh-my-zsh] theme 'powerlevel10k/powerlevel10k' not found
+metobie@TobiasslMachine ~ % finalize the ohmyzsh setuo in script
