@@ -25,6 +25,8 @@ brew update
 # formula: Homebrew package definition that builds from upstream sources
 # cask: Homebrew package definition that installs macOS native applications
 
+# Arc                                         Chromium based browser
+brew install --cask arc #                     brew install --cask arc
 # 1Password                                   Password manager that keeps all passwords secure behind one password
 brew install --cask 1password #               https://formulae.brew.sh/cask/1password
 
@@ -187,6 +189,19 @@ source ~/.zshrc
 # Install
 brew tap FelixKratz/formulae
 brew install sketchybar
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+echo "Installing as a background service"
+echo "Or, if you don't want/need a background service you can just run:"
+echo  "LANG="en_US.UTF-8" /opt/homebrew/opt/sketchybar/bin/sketchybar"
+echo "Run to disable background service: brew services start felixkratz/formulae/sketchybar"
+mkdir -p ~/.config/sketchybar
+cp /opt/homebrew/opt/sketchybar/share/sketchybar/examples/sketchybarrc ~/.config/sketchybar/sketchybarrc
+mkdir ~/.config/sketchybar/plugins
+cp -r /opt/homebrew/opt/sketchybar/share/sketchybar/examples/plugins/ ~/.config/sketchybar/plugins/
+chmod +x ~/.config/sketchybar/plugins/*
+brew services start felixkratz/formulae/sketchybar
+
 
 # Backup dot-files just in case
 #mkdir .bak
