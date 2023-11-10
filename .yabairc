@@ -25,11 +25,11 @@ yabai -m config                                 \
     split_ratio                  0.50           \
     split_type                   auto           \
     auto_balance                 off            \
-    top_padding                  08             \
-    bottom_padding               08             \
-    left_padding                 08             \
-    right_padding                08             \
-    window_gap                   08             \
+    top_padding                  07             \
+    bottom_padding               07             \
+    left_padding                 07             \
+    right_padding                07             \
+    window_gap                   09             \
     layout                       bsp            \
     mouse_modifier               alt            \
     mouse_action1                move           \
@@ -71,4 +71,4 @@ yabai -m rule --add app="^(Firefox)$" space=5
 # apps="^(IntelliJ IDEA|WebStorm|RubyMine|PyCharm|DataGrip)$"
 # yabai -m rule --add app="${apps}" space=3  manage=off
 
-echo "yabai configuration loaded.."
+echo "yabai configuration loaded"
