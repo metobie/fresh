@@ -26,7 +26,7 @@ brew update
 # cask: Homebrew package definition that installs macOS native applications
 
 # Arc                                         Chromium based browser
-brew install --cask arc #                     brew install --cask arc
+brew install --cask arc #                     https://formulae.brew.sh/cask/arc
 # 1Password                                   Password manager that keeps all passwords secure behind one password
 brew install --cask 1password #               https://formulae.brew.sh/cask/1password
 
