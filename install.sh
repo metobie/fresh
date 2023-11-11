@@ -162,11 +162,11 @@ brew install python3
 python3 -m pip install psutil
 brew install bash coreutils gnu-sed git
 brew install osx-cpu-temp
-git clone https://github.com/aristocratos/bashtop.git
-cd bashtop
+git clone https://github.com/aristocratos/bashtop.git ~/.config/bashtop
+cd ~/.config/bashtop
 sudo make install
 
-!CHANGE TERMINAL AND RUN THIS XXX
+# CHANGE TERMINAL AND RUN THIS XXX
 
 #  --  Oh-my-zsh  --  #
 # Open home folder
@@ -181,15 +181,27 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 # Set the theme in ~/.zshrc
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k/powerlevel10k"/g' ~/.zshrc
 
-mkdir ~/.downloads
-git clone https://github.com/metobie/fresh.git ~/.downloads
-cd ~/.downloads/
-cp .p10k.zsh .skhdrc .yabairc .zprofile .zshrc ~/
-yabai --start-service #Allow the prompts
-yabai --restart-service #Allow the prompts
-skhd --start-service # Allow the prompts
-skhd --restart-service # Allow the prompts
-source ~/.zshrc
+# Install fonts
+cd ~/ 
+# clone
+git clone https://github.com/powerline/fonts.git --depth=1 ~/Documents/GitHub
+# install
+cd ~/Documents/GitHub
+./install.sh
+# clean-up a bit
+cd ..
+rm -rf fonts
+
+# mkdir ~/.downloads
+# git clone https://github.com/metobie/fresh.git ~/Documents/GitHub/fresh
+# cd ~/Documents/GitHub/fresh/
+# cp .p10k.zsh .
+# cp skhdrc .yabairc .zprofile .zshrc ~/
+# yabai --start-service #Allow the prompts
+# yabai --restart-service #Allow the prompts
+# skhd --start-service # Allow the prompts
+# skhd --restart-service # Allow the prompts
+# source ~/.zshrc
 # add write changes to zshrc files
 #echo 'Hello' >> /Users/username/Desktop/user.txt
 
@@ -212,15 +224,15 @@ source ~/.zshrc
 
 #  ---  BitBar  --  €
 #BitBar                                       Utility to display the output from any script or program in the menu bar
-brew install --cask bitbar #                  https://formulae.brew.sh/cask/bitbar
-mkdir ~/.config/BitBar
-git clone yabai.1d.sh ~/.config/BitBar # Fix this. 1d=run once a day
-sudo chmod +x ~/.config/BitBar/yabai.1d.sh
-BitBar # How to open application from terminal? Accept prompt
+# brew install --cask bitbar #                  https://formulae.brew.sh/cask/bitbar
+# mkdir ~/.config/BitBar
+# git clone yabai.1d.sh ~/.config/BitBar # Fix this. 1d=run once a day
+# sudo chmod +x ~/.config/BitBar/yabai.1d.sh
+# BitBar # How to open application from terminal? Accept prompt
 
 
 # Backup dot-files just in case
-#mkdir .bak
+#mkdir .config.bak
 #mv .zprofile .bak/.zprofile.bak
 #mv .zshrc .bak/.zshrc.bak
 
@@ -244,10 +256,3 @@ BitBar # How to open application from terminal? Accept prompt
 # yasabi profile
 # skhd profile
 # !docker
-
-
-Last login: Fri Nov 10 00:14:04 on ttys001
-[oh-my-zsh] plugin 'zsh-autosuggestions' not found
-[oh-my-zsh] plugin 'zsh-syntax-highlighting' not found
-[oh-my-zsh] theme 'powerlevel10k/powerlevel10k' not found
-metobie@TobiasslMachine ~ % finalize the ohmyzsh setuo in script
