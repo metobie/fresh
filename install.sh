@@ -189,22 +189,22 @@ source ~/.zshrc
 # add write changes to zshrc files
 #echo 'Hello' >> /Users/username/Desktop/user.txt
 
-#  --  Sketchybar  --  #
+#  --  Sketchybar  --  # REPLACED BY SWIFTBAR
 # Install
-brew tap FelixKratz/formulae
-brew install sketchybar
-brew tap homebrew/cask-fonts
-brew install --cask font-hack-nerd-font
-echo "Installing as a background service"
-echo "Or, if you don't want/need a background service you can just run:"
-echo  "LANG="en_US.UTF-8" /opt/homebrew/opt/sketchybar/bin/sketchybar"
-echo "Run to disable background service: brew services start felixkratz/formulae/sketchybar"
-mkdir -p ~/.config/sketchybar
-cp /opt/homebrew/opt/sketchybar/share/sketchybar/examples/sketchybarrc ~/.config/sketchybar/sketchybarrc
-mkdir ~/.config/sketchybar/plugins
-cp -r /opt/homebrew/opt/sketchybar/share/sketchybar/examples/plugins/ ~/.config/sketchybar/plugins/
-chmod +x ~/.config/sketchybar/plugins/*
-brew services start felixkratz/formulae/sketchybar
+#brew tap FelixKratz/formulae
+#brew install sketchybar
+#brew tap homebrew/cask-fonts
+#brew install --cask font-hack-nerd-font
+#echo "Installing as a background service"
+#echo "Or, if you don't want/need a background service you can just run:"
+#echo  "LANG="en_US.UTF-8" /opt/homebrew/opt/sketchybar/bin/sketchybar"
+#echo "Run to disable background service: brew services start felixkratz/formulae/sketchybar"
+#mkdir -p ~/.config/sketchybar
+#cp /opt/homebrew/opt/sketchybar/share/sketchybar/examples/sketchybarrc ~/.config/sketchybar/sketchybarrc
+#mkdir ~/.config/sketchybar/plugins
+#cp -r /opt/homebrew/opt/sketchybar/share/sketchybar/examples/plugins/ ~/.config/sketchybar/plugins/
+#chmod +x ~/.config/sketchybar/plugins/*
+#brew services start felixkratz/formulae/sketchybar
 
 #  ---  BitBar  --  €
 #BitBar                                       Utility to display the output from any script or program in the menu bar
