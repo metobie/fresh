@@ -94,7 +94,7 @@ brew install --cask microsoft-office #        https://formulae.brew.sh/cask/micr
 brew install --cask microsoft-teams #         https://formulae.brew.sh/cask/microsoft-teams
 
 # Microsoft Remote Desktop                    Remote desktop client
-brew install mmicrosoft-remote-desktop #      https://formulae.brew.sh/cask/microsoft-remote-desktop
+brew install microsoft-remote-desktop #      https://formulae.brew.sh/cask/microsoft-remote-desktop
 
 # Neofetch                                    Fast, highly customisable system info script
 brew install neofetch #                       https://formulae.brew.sh/formula/neofetch
@@ -128,6 +128,10 @@ brew install --cask spotify #                 https://formulae.brew.sh/cask/spot
 
 # Suspicious Package                          Application for inspecting installer packages
 brew install --cask suspicious-package #      https://formulae.brew.sh/cask/suspicious-package
+
+# The Unarchiver                              Unpacks archive files
+brew install --cask the-unarchiver #          https://formulae.brew.sh/cask/the-unarchiver
+
 
 # Tree                                        Display directories as trees (with optional color/HTML output)
 brew install tree #                           https://formulae.brew.sh/formula/tree
