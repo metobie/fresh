@@ -115,7 +115,10 @@ brew install --cask parallels #               https://formulae.brew.sh/cask/para
 brew install --cask quicklook-csv #           https://formulae.brew.sh/cask/quicklook-csv
 
 # RoyalTS                                     Remote management solution
-brew install --cask royal-tsx #               https://formulae.brew.sh/cask/royal-tsx
+brew install --cask royal-tsx #      https://formulae.brew.sh/cask/royal-tsx
+
+# Spacedrive                                  Open source cross-platform file explorer
+brew install --cask spacedrive #              https://formulae.brew.sh/cask/spacedrive
 
 # SMAP                                        Drop-in replacement for Nmap powered by shodan.io
 brew install smap #                           https://formulae.brew.sh/formula/smap
