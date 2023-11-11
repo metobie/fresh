@@ -25,8 +25,6 @@ brew update
 # formula: Homebrew package definition that builds from upstream sources
 # cask: Homebrew package definition that installs macOS native applications
 
-# Arc                                         Chromium based browser
-brew install --cask arc #                     https://formulae.brew.sh/cask/arc
 # 1Password                                   Password manager that keeps all passwords secure behind one password
 brew install --cask 1password #               https://formulae.brew.sh/cask/1password
 
@@ -35,6 +33,9 @@ brew install --cask 1password-cli #           https://formulae.brew.sh/cask/1pas
 
 # Amazon Workspaces                           Cloud native persistent desktop virtualization
 brew install --cask amazon-workspaces #       https://formulae.brew.sh/cask/amazon-workspaces
+
+# Arc                                         Good lookin' Chromium based browser
+# brew install --cask arc # Or should I?      https://formulae.brew.sh/cask/arc
 
 # Burpsuite Professional                      Web security testing toolkit
 brew install --cask burp-suite-professional # https://formulae.brew.sh/cask/burp-suite
@@ -202,13 +203,22 @@ cp -r /opt/homebrew/opt/sketchybar/share/sketchybar/examples/plugins/ ~/.config/
 chmod +x ~/.config/sketchybar/plugins/*
 brew services start felixkratz/formulae/sketchybar
 
+#  ---  BitBar  --  €
+#BitBar                                       Utility to display the output from any script or program in the menu bar
+brew install --cask bitbar #                  https://formulae.brew.sh/cask/bitbar
+mkdir ~/.config/BitBar
+git clone yabai.1d.sh ~/.config/BitBar # Fix this. 1d=run once a day
+sudo chmod +x ~/.config/BitBar/yabai.1d.sh
+BitBar # How to open application from terminal? Accept prompt
+
 
 # Backup dot-files just in case
 #mkdir .bak
 #mv .zprofile .bak/.zprofile.bak
 #mv .zshrc .bak/.zshrc.bak
 
-# Copy new .dot-files
+# Copy all dotfiles frim github after all extensions such as 
+# yabai, skhd, bitbar etc has been insalled and started
 #.config/
 #
 
