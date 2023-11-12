@@ -166,42 +166,61 @@ git clone https://github.com/aristocratos/bashtop.git ~/.config/bashtop
 cd ~/.config/bashtop
 sudo make install
 
-# CHANGE TERMINAL AND RUN THIS XXX
+# -- Backup -- #
+cd ~/ 
+# Backup dot-files just in case
+mkdir .bak/config
+mv .p10k.zsh .bak/config/.p10k.zsh.bak
+mv .skhdrc .bak/config/.skhdrc.bak
+mv .yabairc .bak/config/.yabairc.bak
+mv .zprofile .bak/config/.zprofile.bak
 
 #  --  Oh-my-zsh  --  #
 # Open home folder
 cd ~/ 
 
-# Download Oh My Zsh                          https://github.com/ohmyzsh/ohmyzsh
+# Run Oh My Zsh                              https://github.com/ohmyzsh/ohmyzsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
-# Download PowerLevel10K Theme                https://github.com/romkatv/powerlevel10k
+# Download PowerLevel10K Theme               https://github.com/romkatv/powerlevel10k
 git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerlevel10k
 
 # Set the theme in ~/.zshrc
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k/powerlevel10k"/g' ~/.zshrc
+p10k configure
 
 # Install fonts
 cd ~/ 
 # clone
 git clone https://github.com/powerline/fonts.git --depth=1 ~/Documents/GitHub
 # install
-cd ~/Documents/GitHub
+cd ~/Documents/GitHub/fonts
 ./install.sh
 # clean-up a bit
 cd ..
 rm -rf fonts
 
-# mkdir ~/.downloads
-# git clone https://github.com/metobie/fresh.git ~/Documents/GitHub/fresh
-# cd ~/Documents/GitHub/fresh/
+
+
+cd ~/ 
+#mkdir ~/.downloads
+git clone https://github.com/metobie/fresh.git ~/Documents/GitHub
+cd ~/Documents/GitHub/fresh/dotfiles
 # cp .p10k.zsh .
-# cp skhdrc .yabairc .zprofile .zshrc ~/
-# yabai --start-service #Allow the prompts
-# yabai --restart-service #Allow the prompts
-# skhd --start-service # Allow the prompts
-# skhd --restart-service # Allow the prompts
-# source ~/.zshrc
+cp .skhdrc ~/
+cp .yabairc ~/
+# cp .zprofile ~/
+# cp .zshrc ~/
+
+# clean-up a bit
+cd ..
+rm -rf fresh
+
+yabai --start-service #Allow the prompts
+yabai --restart-service #Allow the prompts
+skhd --start-service # Allow the prompts
+skhd --restart-service # Allow the prompts
+source ~/.zshrc
 # add write changes to zshrc files
 #echo 'Hello' >> /Users/username/Desktop/user.txt
 
