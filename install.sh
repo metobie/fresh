@@ -8,7 +8,7 @@
 
 
 #  --  Rosetta and XCODE Tools  --  #
-sudo softwareupdate --install-rosetta
+sudo softwareupdate --install-rosetta --agree-to-license
 xcode-select --install
 echo "Press <Install> on the prompt. It's probably hidden if you are running terminal in fullcreen..."
 
