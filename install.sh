@@ -166,14 +166,14 @@ git clone https://github.com/aristocratos/bashtop.git ~/.config/bashtop
 cd ~/.config/bashtop
 sudo make install
 
-# -- Backup -- #
+# -- Backup -- # NOT WORKING
 cd ~/ 
 # Backup dot-files just in case
-mkdir .bak/config
-mv .p10k.zsh .bak/config/.p10k.zsh.bak
-mv .skhdrc .bak/config/.skhdrc.bak
-mv .yabairc .bak/config/.yabairc.bak
-mv .zprofile .bak/config/.zprofile.bak
+mkdir -p ~/.bak/config
+cp .p10k.zsh .bak/config/.p10k.zsh.bak
+cp .skhdrc .bak/config/.skhdrc.bak
+cp .yabairc .bak/config/.yabairc.bak
+cp .zprofile .bak/config/.zprofile.bak
 
 #  --  Oh-my-zsh  --  #
 # Open home folder
@@ -189,7 +189,7 @@ git clone https://github.com/romkatv/powerlevel10k.git $ZSH_CUSTOM/themes/powerl
 sed -i 's/ZSH_THEME="robbyrussell"/ZSH_THEME="powerlevel10k/powerlevel10k"/g' ~/.zshrc
 p10k configure
 
-# Install fonts
+# Install fonts NOT WORKING
 cd ~/ 
 # clone
 git clone https://github.com/powerline/fonts.git --depth=1 ~/Documents/GitHub
