@@ -35,10 +35,11 @@ brew install --cask 1password-cli #           https://formulae.brew.sh/cask/1pas
 brew install --cask amazon-workspaces #       https://formulae.brew.sh/cask/amazon-workspaces
 
 # Arc                                         Good lookin' Chromium based browser
-# brew install --cask arc # Or should I?      https://formulae.brew.sh/cask/arc
+brew install --cask arc #                     https://formulae.brew.sh/cask/arc
 
 # Burpsuite Professional                      Web security testing toolkit
-brew install --cask burp-suite-professional # https://formulae.brew.sh/cask/burp-suite
+# brew install --cask burp-suite-professional # https://formulae.brew.sh/cask/burp-suite
+brew install --cask burp-suite #              https://formulae.brew.sh/cask/burp-suite
 
 # Citrix Workspace                            Managed desktop virtualization solution
 brew install --cask citrix-workspace #        https://formulae.brew.sh/cask/citrix-workspace#default
@@ -76,7 +77,7 @@ brew install --cask google-chrome #           https://formulae.brew.sh/cask/goog
 brew install gptline #                        https://formulae.brew.sh/formula/gptline
 
 # iterm2                                      Terminal emulator as alternative to Apple's Terminal app                             
-brew install --cask iterm2 #                https://formulae.brew.sh/cask/iterm2
+brew install --cask iterm2 #                  https://formulae.brew.sh/cask/iterm2
 
 # Mabel                                       Fancy BitTorrent client for the terminal
 brew install mabel #                          https://formulae.brew.sh/formula/mabel
@@ -115,7 +116,7 @@ brew install --cask parallels #               https://formulae.brew.sh/cask/para
 brew install --cask quicklook-csv #           https://formulae.brew.sh/cask/quicklook-csv
 
 # RoyalTS                                     Remote management solution
-brew install --cask royal-tsx #      https://formulae.brew.sh/cask/royal-tsx
+brew install --cask royal-tsx #               https://formulae.brew.sh/cask/royal-tsx
 
 # Spacedrive                                  Open source cross-platform file explorer
 brew install --cask spacedrive #              https://formulae.brew.sh/cask/spacedrive
@@ -131,7 +132,6 @@ brew install --cask suspicious-package #      https://formulae.brew.sh/cask/susp
 
 # The Unarchiver                              Unpacks archive files
 brew install --cask the-unarchiver #          https://formulae.brew.sh/cask/the-unarchiver
-
 
 # Tree                                        Display directories as trees (with optional color/HTML output)
 brew install tree #                           https://formulae.brew.sh/formula/tree
