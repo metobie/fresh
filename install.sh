@@ -8,17 +8,17 @@
 
 
 #  --  Rosetta and XCODE Tools  --  #
-sudo softwareupdate --install-rosetta --agree-to-license
-xcode-select --install
-echo "Press <Install> on the prompt. It's probably hidden if you are running terminal in fullcreen..."
+# sudo softwareupdate --install-rosetta --agree-to-license
+# xcode-select --install
+# echo "Press <Install> on the prompt. It's probably hidden if you are running terminal in fullcreen..."
 
 
 #  --  Homebrew for Apple Silicon  --  #
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
-eval "$(/opt/homebrew/bin/brew shellenv)"
-brew analytics off
-brew update
+# /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+# echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+# eval "$(/opt/homebrew/bin/brew shellenv)"
+# brew analytics off
+# brew update
 
 
 #  --  Install Applications & Tools --  #
